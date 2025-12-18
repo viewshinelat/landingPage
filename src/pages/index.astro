@@ -1,6 +1,7 @@
 
 ---
 
+import Base from '../layouts/Base.astro';
 import HeaderUTF8 from '../components/HeaderUTF8.svelte';
 import HeroUTF8 from '../components/HeroUTF8.svelte';
 import Soluciones from '../components/Soluciones.svelte';
@@ -33,13 +34,15 @@ import Footer from '../components/Footer.svelte';
 </style>
 
 
-<HeaderUTF8 />
-<div class="fadein"><HeroUTF8 /></div>
-<div class="fadein"><Soluciones /></div>
-<div class="fadein"><Aliados /></div>
-<div class="fadein"><Cobertura /></div>
-<div class="fadein"><Vision2030 /></div>
-<div class="fadein"><Contacto /></div>
-<Footer />
+<Base>
+  <HeaderUTF8 />
+  <div class="fadein"><HeroUTF8 /></div>
+  <div class="fadein"><Soluciones /></div>
+  <div class="fadein"><Aliados /></div>
+  <div class="fadein"><Cobertura /></div>
+  <div class="fadein"><Vision2030 /></div>
+  <div class="fadein"><Contacto /></div>
+  <Footer />
+</Base>
 
 
