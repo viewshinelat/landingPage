@@ -21,7 +21,7 @@
     <li><a href="#sobre" on:click|preventDefault={() => scrollToSection('sobre')}>Sobre</a></li>
     <li><a href="#beneficios" on:click|preventDefault={() => scrollToSection('beneficios')}>Beneficios</a></li>
     <li><a href="#experiencia" on:click|preventDefault={() => scrollToSection('experiencia')}>Experiencia</a></li>
-    <li><a href="#testimonios" on:click|preventDefault={() => scrollToSection('testimonios')}>Testimonios</a></li>
+
   </ul>
   <a href="#" on:click={() => scrollToSection('contacto')} class="cta-nav align-right">Contacto</a>
 </nav>

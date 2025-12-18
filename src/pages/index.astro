@@ -2,8 +2,7 @@
 ---
 
 import Base from '../layouts/Base.astro';
-import HeaderUTF8 from '../components/HeaderUTF8.svelte';
-import HeroUTF8 from '../components/HeroUTF8.svelte';
+import Hero from '../components/Hero.svelte';
 import Soluciones from '../components/Soluciones.svelte';
 import Aliados from '../components/Aliados.svelte';
 import Cobertura from '../components/Cobertura.svelte';
@@ -14,6 +13,7 @@ import Footer from '../components/Footer.svelte';
 
 
 <style>
+  /* Fade-in animación para secciones */
   .fadein {
     opacity: 0;
     transform: translateY(40px);
@@ -31,12 +31,45 @@ import Footer from '../components/Footer.svelte';
       transform: none;
     }
   }
+
+  /* Animación de hover para tarjetas y botones */
+  .card, .solucion-card, .hito, .aliados-logos img {
+    transition: box-shadow 0.3s, transform 0.3s;
+  }
+  .card:hover, .solucion-card:hover, .hito:hover, .aliados-logos img:hover {
+    box-shadow: 0 8px 32px rgba(255,140,0,0.15), 0 2px 8px rgba(0,0,0,0.08);
+    transform: translateY(-6px) scale(1.04);
+  }
+
+  /* Botón animado tipo SEMrush */
+  .cta, button, .cta-btn {
+    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
+    box-shadow: 0 2px 8px rgba(255,140,0,0.10);
+  }
+  .cta:hover, button:hover, .cta-btn:hover {
+    background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
+    color: #fff;
+    transform: scale(1.05);
+    box-shadow: 0 8px 32px rgba(255,140,0,0.18);
+  }
+
+  /* Animación de entrada para imágenes y videos */
+  img, video {
+    opacity: 0;
+    animation: fadeinImg 1.2s cubic-bezier(.4,0,.2,1) forwards;
+    animation-delay: 0.3s;
+  }
+  @keyframes fadeinImg {
+    to {
+      opacity: 1;
+    }
+  }
 </style>
 
 
 <Base>
-  <HeaderUTF8 />
-  <div class="fadein"><HeroUTF8 /></div>
+
+  <div class="fadein"><Hero /></div>
   <div class="fadein"><Soluciones /></div>
   <div class="fadein"><Aliados /></div>
   <div class="fadein"><Cobertura /></div>

@@ -2,22 +2,22 @@
   <h2>Nuestras Soluciones</h2>
   <div class="soluciones-grid">
     <div class="solucion-card">
-      <img src="/icons/iot.svg" alt="IoT" class="icon" />
+      <img src="/img/iot.png" alt="IoT" class="icon" />
       <h3>IoT y Smart Metering</h3>
       <p>Implementación de redes inteligentes para la medición y gestión eficiente de agua y energía.</p>
     </div>
     <div class="solucion-card">
-      <img src="/icons/consultoria.svg" alt="Consultoría" class="icon" />
+      <img src="/img/consulto.png" alt="Consultoría" class="icon" />
       <h3>Consultoría Especializada</h3>
       <p>Asesoría estratégica y técnica para empresas de servicios públicos y gobiernos.</p>
     </div>
     <div class="solucion-card">
-      <img src="/icons/analytics.svg" alt="Analytics" class="icon" />
+      <img src="/img/analytics.jpeg" alt="Analytics" class="icon" />
       <h3>Analítica & Big Data</h3>
       <p>Soluciones de análisis avanzado para la toma de decisiones basada en datos.</p>
     </div>
     <div class="solucion-card">
-      <img src="/icons/gestion.svg" alt="Gestión" class="icon" />
+      <img src="/img/gestion.png" alt="Gestión" class="icon" />
       <h3>Gestión Integral de Proyectos</h3>
       <p>Desde la conceptualización hasta la operación, acompañamos todo el ciclo de vida del proyecto.</p>
     </div>
@@ -53,15 +53,25 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  transition: box-shadow 0.2s;
+  transition: box-shadow 0.3s, transform 0.3s;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeinUp 1s cubic-bezier(.4,0,.2,1) forwards;
 }
 .solucion-card:hover {
-  box-shadow: 0 4px 24px rgba(30,144,255,0.13);
+  box-shadow: 0 8px 32px rgba(255,140,0,0.15), 0 2px 8px rgba(0,0,0,0.08);
+  transform: translateY(-6px) scale(1.04);
+}
+@keyframes fadeinUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 .icon {
-  width: 48px;
-  height: 48px;
-  margin-bottom: 18px;
+  width: 80px;
+  height: 80px;
+  margin-bottom: 22px;
 }
 .solucion-card h3 {
   font-size: 1.15rem;

@@ -50,13 +50,27 @@
 }
 .cob-card {
   background: #fff;
-  border-radius: 16px;
-  box-shadow: 0 4px 24px rgba(44,62,80,0.08);
-  padding: 28px 22px;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px rgba(10,37,64,0.08);
+  padding: 32px 18px 24px 18px;
   min-width: 220px;
   max-width: 320px;
   flex: 1 1 220px;
   text-align: left;
+  transition: box-shadow 0.3s, transform 0.3s;
+  opacity: 0;
+  transform: translateY(40px);
+  animation: fadeinUp 1s cubic-bezier(.4,0,.2,1) forwards;
+}
+.cob-card:hover {
+  box-shadow: 0 8px 32px rgba(255,140,0,0.15), 0 2px 8px rgba(0,0,0,0.08);
+  transform: translateY(-6px) scale(1.04);
+}
+@keyframes fadeinUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 .cob-card.principal {
   border: 2px solid #1e90ff;

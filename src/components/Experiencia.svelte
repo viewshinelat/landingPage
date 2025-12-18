@@ -64,11 +64,21 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  transition: transform 0.18s, box-shadow 0.18s;
+    transition: box-shadow 0.3s, transform 0.3s;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeinUp 1s cubic-bezier(.4,0,.2,1) forwards;
 }
 .exp-card:hover {
   transform: translateY(-6px) scale(1.03);
   box-shadow: 0 8px 32px rgba(44,62,80,0.13);
+  }
+}
+@keyframes fadeinUp {
+  to {
+    opacity: 1;
+    transform: none;
+  }
 }
 .exp-card h3 {
   color: #ff6f3c;

@@ -6,8 +6,25 @@
       <a href="#contacto" class="cta">Contáctanos</a>
     </div>
     <div class="hero-media">
-      <video src="/video-hero.mp4" autoplay loop muted playsinline poster="/hero-poster.jpg"></video>
+      <img src="/img/city.jpg" alt="Visualización 3D Smart City" class="hero-3d" />
     </div>
+    <style>
+      .hero-3d {
+        width: 100%;
+        max-width: 420px;
+        border-radius: 16px;
+        box-shadow: 0 4px 24px rgba(10,37,64,0.13);
+        background: #0a2540;
+        margin-top: 12px;
+        animation: fadeinImg 1.2s cubic-bezier(.4,0,.2,1) forwards;
+        opacity: 0;
+      }
+      @keyframes fadeinImg {
+        to {
+          opacity: 1;
+        }
+      }
+    </style>
   </div>
 </section>
 
