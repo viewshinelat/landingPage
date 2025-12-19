@@ -1,7 +1,7 @@
 <footer class="footer">
   <div class="footer-content">
     <div class="footer-logo">
-      <img src="/img/logo.png" alt="Fixlat Logo" />
+      <img src="/img/fixlat.svg" alt="Fixlat Logo" />
       <span>Fixlat</span>
     </div>
     <div class="footer-links">
@@ -40,7 +40,7 @@
   font-weight: 900;
 }
 .footer-logo img {
-  height: 90px;
+  height: 120px;
 }
 .footer-links {
   display: flex;

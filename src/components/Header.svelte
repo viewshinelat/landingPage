@@ -1,7 +1,7 @@
 <header class="header">
   <nav class="navbar">
     <div class="logo">
-      <img src="/img/logo.png" alt="Fixlat Logo" />
+      <img src="/img/fixlat.svg" alt="Fixlat Logo" />
       <span>Fixlat</span>
     </div>
     <ul class="nav-links">
@@ -41,7 +41,7 @@
   color: #0a2540;
 }
 .logo img {
-  height: 68px;
+  height: 80px;
 }
 .nav-links {
   display: flex;
