@@ -19,12 +19,14 @@
 html, body {
   max-width: 100vw;
   overflow-x: hidden;
+  background: rgba(247, 251, 253, 0.85); /* Fondo translúcido */
 }
 .contacto {
-  background: #f7fbfd;
-  color: #0a2540;
-  padding: 64px 0 48px 0;
   text-align: center;
+  padding: 64px 0 32px 0;
+  box-shadow: 0 2px 16px rgba(10,37,64,0.08);
+  border-radius: 18px;
+  color: #0a2540;
 }
 .contacto h2 {
   font-size: 2.1rem;

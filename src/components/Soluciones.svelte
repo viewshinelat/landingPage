@@ -30,6 +30,13 @@
 </section>
 
 <style>
+.soluciones {
+  text-align: center;
+  padding: 64px 0 32px 0;
+  box-shadow: 0 2px 16px rgba(10,37,64,0.08);
+  border-radius: 18px;
+  color: #0a2540;
+}
 .icon {
   background: transparent;
   box-shadow: none;
@@ -48,20 +55,6 @@
   text-align: center;
   z-index: 1;
 }
-
-.soluciones-bg::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(247, 251, 253, 0.85);
-  backdrop-filter: blur(8px);
-  z-index: 0;
-  pointer-events: none;
-}
-
 .soluciones > * {
   position: relative;
   z-index: 1;
@@ -111,7 +104,7 @@
   background: transparent;
   box-shadow: none;
   margin-bottom: 18px;
-  border: none;
+    background: rgba(247, 251, 253, 0.85); /* Fondo translúcido */
 }
 .solucion-card h3 {
   font-size: 1.15rem;
@@ -122,43 +115,5 @@
 .solucion-card p {
   font-size: 1rem;
   color: #0a2540;
-}
-  .soluciones-bg {
-    position: relative;
-    overflow: hidden;
-    background: none;
-    padding: 0;
-  }
-  .soluciones-bg-svg {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    pointer-events: none;
-    background: transparent;
-    backdrop-filter: blur(12px);
-  }
-  .soluciones-bg-svg::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-image: url('data:image/svg+xml;utf8,<svg width="100%25" height="100%25" viewBox="0 0 1440 320" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill="%23e3f1fc" fill-opacity="0.35" d="M0,160L60,170.7C120,181,240,203,360,197.3C480,192,600,160,720,133.3C840,107,960,85,1080,101.3C1200,117,1320,171,1380,197.3L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg>');
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.5;
-    z-index: 1;
-  }
-  .soluciones {
-    position: relative;
-    z-index: 2;
-    background: none;
-    color: #0a2540;
-    padding: 64px 0 48px 0;
-    text-align: center;
-  }
+}  
 </style>
