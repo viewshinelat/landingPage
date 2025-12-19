@@ -2,6 +2,7 @@
   <nav class="navbar">
     <div class="logo">
       <img src="/img/fixlat.svg" alt="Fixlat Logo" />
+      <img src="/img/fixlat.svg" alt="Fixlat Logo" />
       <span>Fixlat</span>
     </div>
     <ul class="nav-links">
