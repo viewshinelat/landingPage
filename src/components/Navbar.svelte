@@ -1,6 +1,12 @@
 <script>
   let menuOpen = false;
+  import { onMount } from 'svelte';
+  let canScroll = false;
+  onMount(() => {
+    canScroll = true;
+  });
   function scrollToSection(id) {
+    if (!canScroll) return;
     const el = document.getElementById(id);
     if (el) {
       el.scrollIntoView({ behavior: 'smooth' });

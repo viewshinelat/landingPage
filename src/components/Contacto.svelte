@@ -9,13 +9,17 @@
     <button type="submit">Enviar mensaje</button>
   </form>
   <div class="contact-info">
-    <div><strong>Email:</strong> contacto@fixlat.com</div>
-    <div><strong>Teléfono:</strong> +57 123 456 7890</div>
-    <div><strong>Oficinas:</strong> Colombia, México, Brasil, Curazao</div>
+    <div><strong>Email:</strong> comercial@fixlat.com</div>
+    <div><strong>Teléfono:</strong> +57 310 415 4049</div>
+    <div><strong>Oficina:</strong> Carrera 41 #13C-34, Cali, Valle del Cauca, Colombia</div>
   </div>
 </section>
 
 <style>
+html, body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 .contacto {
   background: #f7fbfd;
   color: #0a2540;
@@ -39,17 +43,27 @@
   box-shadow: 0 2px 12px rgba(10,37,64,0.08);
   padding: 32px 24px 24px 24px;
 }
-.form-row {
-  display: flex;
-  gap: 12px;
-}
-.form-row input {
-  flex: 1;
-  padding: 12px;
-  border: 1px solid #b2e0e0;
-  border-radius: 6px;
-  font-size: 1rem;
-}
+  .form-row {
+    display: flex;
+    gap: 12px;
+  }
+  .form-row input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #b2e0e0;
+    border-radius: 6px;
+    font-size: 1rem;
+  }
+
+  @media (max-width: 600px) {
+    .form-row {
+      flex-direction: column;
+      gap: 8px;
+    }
+    .form-row input {
+      width: 100%;
+    }
+  }
 textarea {
   padding: 12px;
   border: 1px solid #b2e0e0;

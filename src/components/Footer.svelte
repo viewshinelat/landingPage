@@ -40,7 +40,7 @@
   font-weight: 900;
 }
 .footer-logo img {
-  height: 32px;
+  height: 90px;
 }
 .footer-links {
   display: flex;

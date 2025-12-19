@@ -2,7 +2,7 @@
 <section class="hero" id="hero">
   <div class="hero-content">
     <div class="hero-text">
-      <h1>Soluciones inteligentes para la gestión de agua y energía</h1>
+      <h1>Soluciones inteligentes para la gestión del agua</h1>
       <p>Impulsamos la transformación digital de servicios públicos en Latinoamérica y el mundo, integrando tecnología, consultoría y analítica avanzada.</p>
       <a href="#contacto" class="cta">Contáctanos</a>
     </div>

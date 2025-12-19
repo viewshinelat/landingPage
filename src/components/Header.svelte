@@ -41,7 +41,7 @@
   color: #0a2540;
 }
 .logo img {
-  height: 38px;
+  height: 68px;
 }
 .nav-links {
   display: flex;

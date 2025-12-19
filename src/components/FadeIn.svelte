@@ -4,7 +4,7 @@
   let el;
   onMount(() => {
     if (!el) return;
-    const observer = new window.IntersectionObserver(
+    const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
           visible = true;

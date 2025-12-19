@@ -12,7 +12,7 @@
       <p>Asesoría estratégica y técnica para empresas de servicios públicos y gobiernos.</p>
     </div>
     <div class="solucion-card">
-      <img src="/img/analytics.jpeg" alt="Analytics" class="icon" />
+      <img src="/img/analytics.png" alt="Analytics" class="icon" />
       <h3>Analítica & Big Data</h3>
       <p>Soluciones de análisis avanzado para la toma de decisiones basada en datos.</p>
     </div>
@@ -25,6 +25,17 @@
 </section>
 
 <style>
+.icon {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  border-radius: 16px;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  display: block;
+  margin: 0 auto 18px auto;
+}
 .soluciones {
   background: #f7fbfd;
   color: #0a2540;
@@ -69,9 +80,14 @@
   }
 }
 .icon {
-  width: 80px;
-  height: 80px;
-  margin-bottom: 22px;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: transparent;
+  box-shadow: none;
+  margin-bottom: 18px;
+  border: none;
 }
 .solucion-card h3 {
   font-size: 1.15rem;
