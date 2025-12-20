@@ -1,33 +1,42 @@
-
 ---
-
-import Base from '../layouts/Base.astro';
-import Header from '../components/Header.svelte';
-import Hero from '../components/Hero.svelte';
-import Soluciones from '../components/Soluciones.svelte';
-import Aliados from '../components/Aliados.svelte';
-import CasosExito from '../components/CasosExito.svelte';
-import Cobertura from '../components/Cobertura.svelte';
-import Vision2030 from '../components/Vision2030.svelte';
-import Contacto from '../components/Contacto.svelte';
-import Footer from '../components/Footer.svelte';
-import AOSInit from '../components/AOSInit.svelte';
+import Base from "../layouts/Base.astro";
+import Header from "../components/Header.svelte";
+import Hero from "../components/Hero.svelte";
+import Soluciones from "../components/Soluciones.svelte";
+import Aliados from "../components/Aliados.svelte";
+import CasosExito from "../components/CasosExito.svelte";
+import Cobertura from "../components/Cobertura.svelte";
+import Vision2030 from "../components/Vision2030.svelte";
+import Contacto from "../components/Contacto.svelte";
+import Footer from "../components/Footer.svelte";
+import AOSInit from "../components/AOSInit.svelte";
 ---
-
 
 <style>
   /* Fade-in animación para secciones */
   .fadein {
     opacity: 0;
     transform: translateY(40px);
-    animation: fadeinUp 1s cubic-bezier(.4,0,.2,1) forwards;
+    animation: fadeinUp 1s cubic-bezier(0.4, 0, 0.2, 1) forwards;
   }
-  .fadein:nth-child(1) { animation-delay: 0.1s; }
-  .fadein:nth-child(2) { animation-delay: 0.2s; }
-  .fadein:nth-child(3) { animation-delay: 0.3s; }
-  .fadein:nth-child(4) { animation-delay: 0.4s; }
-  .fadein:nth-child(5) { animation-delay: 0.5s; }
-  .fadein:nth-child(6) { animation-delay: 0.6s; }
+  .fadein:nth-child(1) {
+    animation-delay: 0.1s;
+  }
+  .fadein:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .fadein:nth-child(3) {
+    animation-delay: 0.3s;
+  }
+  .fadein:nth-child(4) {
+    animation-delay: 0.4s;
+  }
+  .fadein:nth-child(5) {
+    animation-delay: 0.5s;
+  }
+  .fadein:nth-child(6) {
+    animation-delay: 0.6s;
+  }
   @keyframes fadeinUp {
     to {
       opacity: 1;
@@ -36,30 +45,49 @@ import AOSInit from '../components/AOSInit.svelte';
   }
 
   /* Animación de hover para tarjetas y botones */
-  .card, .solucion-card, .hito, .aliados-logos img {
-    transition: box-shadow 0.3s, transform 0.3s;
+  .card,
+  .solucion-card,
+  .hito,
+  .aliados-logos img {
+    transition:
+      box-shadow 0.3s,
+      transform 0.3s;
   }
-  .card:hover, .solucion-card:hover, .hito:hover, .aliados-logos img:hover {
-    box-shadow: 0 8px 32px rgba(255,140,0,0.15), 0 2px 8px rgba(0,0,0,0.08);
+  .card:hover,
+  .solucion-card:hover,
+  .hito:hover,
+  .aliados-logos img:hover {
+    box-shadow:
+      0 8px 32px rgba(255, 140, 0, 0.15),
+      0 2px 8px rgba(0, 0, 0, 0.08);
     transform: translateY(-6px) scale(1.04);
   }
 
   /* Botón animado tipo SEMrush */
-  .cta, button, .cta-btn {
-    transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.2s;
-    box-shadow: 0 2px 8px rgba(255,140,0,0.10);
+  .cta,
+  button,
+  .cta-btn {
+    transition:
+      background 0.2s,
+      color 0.2s,
+      box-shadow 0.2s,
+      transform 0.2s;
+    box-shadow: 0 2px 8px rgba(255, 140, 0, 0.1);
   }
-  .cta:hover, button:hover, .cta-btn:hover {
+  .cta:hover,
+  button:hover,
+  .cta-btn:hover {
     background: linear-gradient(90deg, #ff9800 0%, #ff5722 100%);
     color: #fff;
     transform: scale(1.05);
-    box-shadow: 0 8px 32px rgba(255,140,0,0.18);
+    box-shadow: 0 8px 32px rgba(255, 140, 0, 0.18);
   }
 
   /* Animación de entrada para imágenes y videos */
-  img, video {
+  img,
+  video {
     opacity: 0;
-    animation: fadeinImg 1.2s cubic-bezier(.4,0,.2,1) forwards;
+    animation: fadeinImg 1.2s cubic-bezier(0.4, 0, 0.2, 1) forwards;
     animation-delay: 0.3s;
   }
   @keyframes fadeinImg {
@@ -69,19 +97,27 @@ import AOSInit from '../components/AOSInit.svelte';
   }
 </style>
 
-
-
 <Base>
   <AOSInit client:only="svelte" />
   <Header data-aos="fade-down" data-aos-duration="800" />
   <div data-aos="fade-up" data-aos-duration="900"><Hero /></div>
-  <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="900"><Soluciones /></div>
-  <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="900"><Cobertura /></div>
-  <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="900"><CasosExito client:only="svelte" /></div>
-  <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="900"><Aliados client:only="svelte" /></div>
-  <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="900"><Vision2030 /></div>
-  <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="900"><Contacto /></div>
+  <div data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
+    <Soluciones />
+  </div>
+  <div data-aos="fade-up" data-aos-delay="400" data-aos-duration="900">
+    <Cobertura />
+  </div>
+  <div data-aos="fade-up" data-aos-delay="500" data-aos-duration="900">
+    <CasosExito client:only="svelte" />
+  </div>
+  <div data-aos="fade-up" data-aos-delay="600" data-aos-duration="900">
+    <Aliados client:only="svelte" />
+  </div>
+  <div data-aos="fade-up" data-aos-delay="800" data-aos-duration="900">
+    <Vision2030 />
+  </div>
+  <div data-aos="fade-up" data-aos-delay="1000" data-aos-duration="900">
+    <Contacto client:load />
+  </div>
   <Footer data-aos="fade-up" data-aos-delay="1200" data-aos-duration="900" />
 </Base>
-
-

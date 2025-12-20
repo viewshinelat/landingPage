@@ -1,31 +1,57 @@
 ---
+
 ---
+
 <html lang="es">
   <head>
     <meta charset="utf-8" />
-      <meta charset="UTF-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <title>Fixlat | Soluciones Inteligentes</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
     <style>
       :global(body) {
-        font-family: 'Roboto', Arial, sans-serif;
+        font-family: "Roboto", Arial, sans-serif;
         margin: 0;
         padding: 0;
-        background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.85)), url('/img/fondo.jpeg');
+        background:
+          linear-gradient(rgba(255, 255, 255, 0.85), rgba(255, 255, 255, 0.85)),
+          url("/img/fondo.jpeg");
         background-size: cover;
         background-position: center;
         background-attachment: fixed;
         color: #222;
       }
-      main { min-height: 100vh; }
-      footer { background: #0a2540; color: #fff; text-align: center; padding: 20px 0; margin-top: 40px; }
+      main {
+        min-height: 100vh;
+      }
+      footer {
+        background: #0a2540;
+        color: #fff;
+        text-align: center;
+        padding: 20px 0;
+        margin-top: 40px;
+      }
     </style>
   </head>
   <body>
     <main>
       <slot />
     </main>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init({
+          publicKey: "bq2M5LmtqNFWBY3tL",
+        });
+      })();
+    </script>
   </body>
 </html>
