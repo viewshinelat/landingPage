@@ -3,7 +3,6 @@
   <div class="footer-logo-section">
     <div class="footer-logo">
       <img src="/img/fixlat.svg" alt="Fixlat Logo" />
-      <span>Fixlat</span>
     </div>
   </div>
 

@@ -2,7 +2,6 @@
   <nav class="navbar">
     <div class="logo">
       <img src="/img/fixlat.svg" alt="Fixlat Logo" />
-      <span>Fixlat</span>
     </div>
     <ul class="nav-links">
       <li><a href="#hero">Inicio</a></li>
@@ -35,7 +34,7 @@
   .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 150px;
     font-size: 1.3rem;
     font-weight: 900;
     color: #0a2540;

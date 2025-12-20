@@ -6,7 +6,7 @@
       <span class="pais">Colombia</span>
       <div class="detalle-flex">
         <div>
-          Aliado estratégico del MinTIC para la plataforma "PAIS".<br>Trabajo directo e indirecto con 261 empresas de servicios públicos (PyMES).
+          Aliado estratégico del MinTIC para la plataforma "PAIS".<br>Trabajo directo e indirecto con 261 empresas de servicios públicos.
         </div>
         <div class="bandera-wrap"><img src="/img/Colombia.png" alt="Colombia" class="img-bandera" /></div>
       </div>
