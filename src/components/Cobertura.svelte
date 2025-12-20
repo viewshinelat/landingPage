@@ -4,32 +4,69 @@
   <div class="cobertura-grid">
     <div class="cob-card principal">
       <span class="pais">Colombia</span>
-      <div class="detalle-flex">Aliado estratégico del MinTIC para la plataforma "PAIS".<br>Trabajo directo e indirecto con 261 empresas de servicios públicos (PyMES).<img src="/img/Colombia.png" alt="Colombia" class="img-bandera" /></div>
+      <div class="detalle-flex">
+        <div>
+          Aliado estratégico del MinTIC para la plataforma "PAIS".<br>Trabajo directo e indirecto con 261 empresas de servicios públicos (PyMES).
+        </div>
+        <div class="bandera-wrap"><img src="/img/Colombia.png" alt="Colombia" class="img-bandera" /></div>
+      </div>
 
     </div>
 
     <div class="cob-card">
       <span class="pais">México</span>
-      <div class="detalle-flex">Proyectos con 12+ utilidades medianas y grandes.<br>Consultores para 36+ proyectos de distribución de agua privada.<img src="/img/Mexico.png" alt="México" class="img-bandera" /></div>
+      <div class="detalle-flex">
+        <div>
+          Proyectos con 12+ utilidades medianas y grandes.<br>Consultores para 36+ proyectos de distribución de agua privada.
+        </div>
+        <div class="bandera-wrap"><img src="/img/Mexico.png" alt="México" class="img-bandera" /></div>
+      </div>
     </div>
     <div class="cob-card">
       <span class="pais">Perú</span>
-      <div class="detalle-flex">Socio y consultor del mayor distribuidor de medidores inteligentes del país.<img src="/img/Peru.png" alt="Perú" class="img-bandera" /></div>
+      <div class="detalle-flex">
+        <div>
+          Socio y consultor del mayor distribuidor de medidores inteligentes del país.
+        </div>
+        <div class="bandera-wrap"><img src="/img/Peru.png" alt="Perú" class="img-bandera" /></div>
+      </div>
     </div>
     <div class="cob-card expansion">
       <span class="pais">🌎 Regional y Países en Expansión</span>
       <div class="detalle-flex">
-        Soporte técnico a servicios públicos en Chile, Brasil y Uruguay.<br>
-        <strong>En Expansión:</strong> Paraguay, Panamá, República Dominicana, Guatemala<img src="/img/latam.png" alt="Latam" class="img-bandera" />
+        <div>
+          Soporte técnico a servicios públicos en Chile, Brasil y Uruguay.<br>
+          <strong>En Expansión:</strong> Paraguay, Panamá, República Dominicana, Guatemala
+        </div>
+        <div class="bandera-wrap"><img src="/img/latam.png" alt="Latam" class="img-bandera latam" /></div>
       </div>
     </div>
   </div>
 </section>
 
 <style>
+/* Posicionamiento absoluto para la bandera */
+.cob-card {
+  position: relative;
+}
+.detalle-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+}
+.bandera-wrap {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 46px;
+}
+.bandera-wrap .img-bandera.latam {
+  /* Sin reglas especiales, se alinea igual que las demás */
+}
 .img-bandera {
   display: block;
-  margin: 18px auto 0 auto;
+  margin: 0 auto;
   width: 90px;
   height: 90px;
   object-fit: contain;
@@ -37,6 +74,10 @@
   background: transparent;
   box-shadow: none;
   border: none;
+}
+.img-bandera.latam {
+  width: 110px;
+  height: 110px;
 }
 .cobertura {
   background: #f7fafc;
@@ -90,13 +131,19 @@
   flex: 1 1 0;
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  height: 100%;
+  justify-content: flex-start;
+  /* height: 100%; */
 }
 .img-bandera {
-  margin-top: auto;
-  margin-bottom: 24000px;
-  padding-bottom: 0;
+  display: block;
+  margin: 400px auto 0 auto;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  border-radius: 16px;
+  background: transparent;
+  box-shadow: none;
+  border: none;
   align-self: center;
 }
 .cob-card:hover {

@@ -11,7 +11,7 @@
   <div class="contact-info">
     <div><strong>Email:</strong> comercial@fixlat.com</div>
     <div><strong>Teléfono:</strong> +57 310 415 4049</div>
-    <div><strong>Oficina:</strong> Carrera 41 #13C-34, Cali, Valle del Cauca, Colombia</div>
+    <div><strong>Oficina:</strong> Cl. 6 Nte. #1-42, Granada, Cali, Valle del Cauca, Colombia</div>
   </div>
 </section>
 
