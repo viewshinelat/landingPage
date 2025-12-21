@@ -135,6 +135,8 @@
     justify-content: center;
     gap: 18px;
     margin-bottom: 18px;
+      max-width: 100vw;
+      overflow-x: hidden;
   }
   .carrusel-btn {
     background: #e6f0fa;
@@ -159,6 +161,9 @@
     gap: 32px;
     align-items: center;
     justify-content: center;
+      max-width: 100vw;
+      overflow-x: auto;
+      box-sizing: border-box;
   }
   .caso-logo {
     height: 64px;
@@ -168,6 +173,7 @@
     border-radius: 10px;
     margin: 0 8px;
     transition: transform 0.2s;
+      flex-shrink: 0;
   }
   .caso-logo:hover {
     transform: scale(1.08);
@@ -194,4 +200,23 @@
       font-size: 1.25rem;
     }
   }
+
+    /* Pantallas pequeñas (Mobile) */
+    @media (max-width: 600px) {
+      .casos-carrusel {
+        gap: 8px;
+        padding: 0 4px;
+      }
+      .casos-logos {
+        gap: 12px;
+        max-width: 100vw;
+        overflow-x: auto;
+        padding: 0 2px;
+      }
+      .caso-logo {
+        height: 40px;
+        max-width: 70px;
+        margin: 0 2px;
+      }
+    }
 </style>
